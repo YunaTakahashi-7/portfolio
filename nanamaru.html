@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>Grid Layout iPad</title>
+  <link rel="stylesheet" href="css/reset.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'zfj2tvx',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+
+<body>
+<div class="container">
+  <header class="header">
+    <h1></h1>
+    <figure class="titleimage">
+      <img src="images/516_N.png" alt="N" class="image_size_n">
+      <img src="images/539_a.png" alt="a" class="image_size_m">
+      <img src="images/552_n.png" alt="n" class="image_size_m">
+      <img src="images/539_a.png" alt="a" class="image_size_m">
+      <img src="images/551_m.png" alt="m" class="image_size_m">
+      <img src="images/539_a.png" alt="a" class="image_size_m">
+      <img src="images/556_r.png" alt="r" class="image_size_m">
+      <img src="images/559_u.png" alt="u" class="image_size_m">
+    </figure>
+  </header>
+
+  <div class="swiper-container">
+    <div class="swiper-wrapper"> 
+      <!-- それぞれのスライドの div 要素 -->
+      <div class="swiper-slide"><img src="images/HelloWorld.png" alt="表紙HelloWorld"></div>
+      <div class="swiper-slide"><a href="https://unityroom.com/games/omochi_1weekgame_shimazu"><img src="images/game_mochi.png" alt="おもちあつめゲームの紹介"></a></div>
+      <div class="swiper-slide"><a href="https://unityroom.com/games/obasan-no_hukushu"><img src="images/oji_2.png" alt="おじさん大爆発（ブロック崩し）ゲーム紹介"></a></div>
+    </div>
+    <!-- ページネーションの div 要素 -->
+    <div class="swiper-pagination"></div>
+   
+    <!-- ナビゲーションボタンの div 要素-->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+   
+    <!-- スクロールバーの div 要素 -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+
+  <main class="main">
+    <img src="images/photo12_2.jpg" alt="背景" class="background">
+    <h2>About Me</h2>
+    <figure class="photo">
+      <img src="images/applephoto.png" alt="アイコンイラスト">
+    </figure>
+    <article class="main-text">
+      
+      <p class="p1">
+        YUNA TAKAHASHI
+        <br>活動名:　ななまる
+        <br>趣味:　&nbsp;&nbsp;&nbsp;ゲーム制作、ゲームプレイ、バンド
+        <br>好きなゲーム:　原神、Rollin' Dots
+        <br>スキル:　Unity（半年）、C#、Python、HTML/CSS
+        <br>夢:　ゲーム開発のスキルを教える場を運営すること、<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;個人開発アプリ１００万ダウンロードを達成すること</p>
+      
+    </article>
+  </main>
+  <figure class="SNS">
+    <figure class="SNS_Logo">
+      <a href="https://twitter.com/RyunenKamikaihi"><img src="images/sns_2.png" alt="twitter"></a>
+    </figure>
+  </figure>
+
+  <footer class="footer">
+    <p class="footer_title">Contact</p>
+    <div class="footer_textbox">
+      <p class="footer_text">Gmail<br>TEL</p>
+      <p class="footer_text">y.takahashi99624@gmail.com<br>080-5531-1315</p>
+    </div>
+  </footer>
+</div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>   
+  <script>
+    let mySwiper = new Swiper ('.swiper-container', {
+      // 以下にオプションを設定
+      loop: true, //最後に達したら先頭に戻る
+     
+      //ページネーション表示の設定
+      pagination: { 
+        el: '.swiper-pagination', //ページネーションの要素
+        type: 'bullets', //ページネーションの種類
+        clickable: true, //クリックに反応させる
+      },
+     
+      //ナビゲーションボタン（矢印）表示の設定
+      navigation: { 
+        nextEl: '.swiper-button-next', //「次へボタン」要素の指定
+        prevEl: '.swiper-button-prev', //「前へボタン」要素の指定
+      },
+     
+      //スクロールバー表示の設定
+      scrollbar: { 
+        el: '.swiper-scrollbar', //要素の指定
+      },
+    })
+    </script>  
+</body>
+</html>
